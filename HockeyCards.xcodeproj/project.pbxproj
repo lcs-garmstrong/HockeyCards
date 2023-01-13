@@ -11,6 +11,7 @@
 		97CCACB22970982B00EACA61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CCACB12970982B00EACA61 /* ContentView.swift */; };
 		97CCACB42970983100EACA61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97CCACB32970983100EACA61 /* Assets.xcassets */; };
 		97CCACB72970983100EACA61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97CCACB62970983100EACA61 /* Preview Assets.xcassets */; };
+		97FAD550297213F3001EB2CB /* HockeyCardStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD54F297213F3001EB2CB /* HockeyCardStructure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		97CCACB12970982B00EACA61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97CCACB32970983100EACA61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97CCACB62970983100EACA61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97FAD54F297213F3001EB2CB /* HockeyCardStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCardStructure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				97CCACAF2970982B00EACA61 /* HockeyCardsApp.swift */,
 				97CCACB12970982B00EACA61 /* ContentView.swift */,
+				97FAD54F297213F3001EB2CB /* HockeyCardStructure.swift */,
 				97CCACB32970983100EACA61 /* Assets.xcassets */,
 				97CCACB52970983100EACA61 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				97CCACB22970982B00EACA61 /* ContentView.swift in Sources */,
 				97CCACB02970982B00EACA61 /* HockeyCardsApp.swift in Sources */,
+				97FAD550297213F3001EB2CB /* HockeyCardStructure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
