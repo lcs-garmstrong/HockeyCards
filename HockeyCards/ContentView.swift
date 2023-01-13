@@ -42,7 +42,7 @@ struct ContentView: View {
                         Image("LeafsLogo")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 150)
+                            .frame(width: 125)
                     }
                 }
             }
@@ -56,22 +56,35 @@ struct ContentView: View {
                 VStack {
                     Text("Auston Mattews")
                         .font(Font.custom("Arial-ItalicMT", size: 25))
+                        .bold()
                     Text("Centerman / Toronto Maple Leafs")
                 }
             }
             .padding(10)
             
                 HStack{
-                    Text("Height")
-                    Text("Weight")
+                    Text("Height:")
+                        .bold()
+                    Text("6' 3" )
+                    Text("Weight:")
+                        .bold()
+                    Text("208 lb")
                     
                 }
                 
                 HStack{
                     Text("GP")
+                        .bold()
+                    Text("448")
                     Text("G")
+                        .bold()
+                    Text("279")
                     Text("A")
+                        .bold()
+                    Text("225")
                     Text("PTS")
+                        .bold()
+                    Text("504")
                 }
 
                 .padding(10)
