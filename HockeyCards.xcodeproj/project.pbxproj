@@ -15,6 +15,7 @@
 		97FAD5522972F7B1001EB2CB /* MitchMarner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD5512972F7B1001EB2CB /* MitchMarner.swift */; };
 		97FAD5542972F989001EB2CB /* JohnTavares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD5532972F989001EB2CB /* JohnTavares.swift */; };
 		97FAD5562972FD32001EB2CB /* WilliamNylander.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD5552972FD32001EB2CB /* WilliamNylander.swift */; };
+		97FAD5582972FEE7001EB2CB /* MorganRielly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD5572972FEE7001EB2CB /* MorganRielly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		97FAD5512972F7B1001EB2CB /* MitchMarner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitchMarner.swift; sourceTree = "<group>"; };
 		97FAD5532972F989001EB2CB /* JohnTavares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JohnTavares.swift; sourceTree = "<group>"; };
 		97FAD5552972FD32001EB2CB /* WilliamNylander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WilliamNylander.swift; sourceTree = "<group>"; };
+		97FAD5572972FEE7001EB2CB /* MorganRielly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorganRielly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				97FAD5512972F7B1001EB2CB /* MitchMarner.swift */,
 				97FAD5532972F989001EB2CB /* JohnTavares.swift */,
 				97FAD5552972FD32001EB2CB /* WilliamNylander.swift */,
+				97FAD5572972FEE7001EB2CB /* MorganRielly.swift */,
 				97CCACB32970983100EACA61 /* Assets.xcassets */,
 				97CCACB52970983100EACA61 /* Preview Content */,
 			);
@@ -153,6 +156,7 @@
 				97CCACB22970982B00EACA61 /* ContentView.swift in Sources */,
 				97CCACB02970982B00EACA61 /* HockeyCardsApp.swift in Sources */,
 				97FAD5522972F7B1001EB2CB /* MitchMarner.swift in Sources */,
+				97FAD5582972FEE7001EB2CB /* MorganRielly.swift in Sources */,
 				97FAD550297213F3001EB2CB /* HockeyCardStructure.swift in Sources */,
 				97FAD5542972F989001EB2CB /* JohnTavares.swift in Sources */,
 			);
