@@ -44,7 +44,10 @@ struct HockeyCardStructure: View {
                             Text(playerNumber)
                                 .foregroundColor(Color("Dark Blue"))
                                 .font(Font.custom("San Francisco", size: 35))
+                                .frame(maxWidth: 75)
+                                .background(Color.white)
                                 .padding(20)
+                            
                             Spacer()
                         }
                         Spacer()
