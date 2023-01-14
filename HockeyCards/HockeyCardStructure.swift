@@ -24,58 +24,59 @@ struct HockeyCardStructure: View {
     
     var body: some View {
         VStack {
-            ZStack {
-                
-                Color("Dark Blue")
-                    .ignoresSafeArea()
-                
-                Color.white
-                    .padding(15)
-                    .ignoresSafeArea()
-                
-                Image(playerPhoto)
-                    .resizable()
-                    .scaledToFit()
-                    .padding(40)
-                
-                HStack {
-                    VStack {
-                        Text(playerNumber)
-                            .foregroundColor(Color("Dark Blue"))
-                            .font(Font.custom("San Francisco", size: 35))
-                            .padding(20)
+            ScrollView {
+                ZStack {
+                    
+                    Color("Dark Blue")
+                        .ignoresSafeArea()
+                    
+                    Color.white
+                        .padding(15)
+                        .ignoresSafeArea()
+                    
+                    Image(playerPhoto)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(40)
+                    
+                    HStack {
+                        VStack {
+                            Text(playerNumber)
+                                .foregroundColor(Color("Dark Blue"))
+                                .font(Font.custom("San Francisco", size: 35))
+                                .padding(20)
+                            Spacer()
+                        }
                         Spacer()
                     }
-                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        VStack {
+                            Spacer()
+                            Image("LeafsLogo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 125)
+                        }
+                    }
                 }
                 
                 HStack {
-                    Spacer()
+                    Image("NHL logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40)
+                    
                     VStack {
-                        Spacer()
-                        Image("LeafsLogo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 125)
+                        Text(playerName)
+                            .font(Font.custom("Arial-ItalicMT", size: 25))
+                            .bold()
+                        Text(positionAndTeam)
                     }
                 }
-            }
-            
-            HStack {
-                Image("NHL logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40)
+                .padding(10)
                 
-                VStack {
-                    Text(playerName)
-                        .font(Font.custom("Arial-ItalicMT", size: 25))
-                        .bold()
-                    Text(positionAndTeam)
-                }
-            }
-            .padding(10)
-            
                 HStack{
                     Text("Height:")
                         .bold()
@@ -100,15 +101,16 @@ struct HockeyCardStructure: View {
                         .bold()
                     Text(points)
                 }
-
+                
                 .padding(10)
-            Text("Player Description")
-                .bold()
-            
-            Text(playerDescription)
-            
+                Text("Player Description")
+                    .bold()
+                
+                Text(playerDescription)
+                
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
