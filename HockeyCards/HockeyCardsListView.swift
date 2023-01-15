@@ -13,7 +13,13 @@ struct HockeyCardsListView: View {
             NavigationLink(destination: {
                 ContentView()
             },label: {
-              Text("Auston Matthews")
+                    Image("Auston Matthews")
+                    .resizable()
+                    .scaledToFill()
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.blue, lineWidth: 3))
+                       
+                Text("Auston Matthews")
             })
             
             NavigationLink(destination: {

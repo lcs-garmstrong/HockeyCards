@@ -24,95 +24,102 @@ struct HockeyCardStructure: View {
     
     var body: some View {
         VStack {
-            ScrollView {
-                ZStack {
-                    
-                    Color("Dark Blue")
-                        .ignoresSafeArea()
-                    
-                    Color.white
-                        .padding(15)
-                        .ignoresSafeArea()
-                    
-                    Image(playerPhoto)
-                        .resizable()
-                        .scaledToFit()
-                        .padding(40)
-                    
-                    HStack {
-                        VStack {
-                            Text(playerNumber)
-                                .foregroundColor(Color("Dark Blue"))
-                                .font(Font.custom("San Francisco", size: 35))
-                                .frame(maxWidth: 75)
-                                .background(Color.white)
-                                .padding(20)
-                            
-                            Spacer()
-                        }
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Spacer()
-                        VStack {
-                            Spacer()
-                            Image("LeafsLogo")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 125)
-                        }
-                    }
-                }
+            ZStack {
+                RadialGradient(colors: [.blue, .white],
+                               center: .top,
+                               startRadius: 0,
+                               endRadius: 630)
+                .ignoresSafeArea()
                 
-                HStack {
-                    Image("NHL logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 40)
+                ScrollView {
+                    ZStack {
+                        
+                        Color("Dark Blue")
+                        
+                        Color.white
+                            .padding(15)
+                            .ignoresSafeArea()
+                        
+                        Image(playerPhoto)
+                            .resizable()
+                            .scaledToFit()
+                            .padding(40)
+                        
+                        HStack {
+                            VStack {
+                                Text(playerNumber)
+                                    .foregroundColor(Color("Dark Blue"))
+                                    .font(Font.custom("San Francisco", size: 35))
+                                    .frame(maxWidth: 75)
+                                    .background(Color.white)
+                                    .padding(20)
+                                
+                                Spacer()
+                            }
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            Spacer()
+                            VStack {
+                                Spacer()
+                                Image("LeafsLogo")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 125)
+                            }
+                        }
+                    }
                     
-                    VStack {
-                        Text(playerName)
-                            .font(Font.custom("Arial-ItalicMT", size: 25))
+                    HStack {
+                        Image("NHL logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40)
+                        
+                        VStack {
+                            Text(playerName)
+                                .font(Font.custom("Arial-ItalicMT", size: 25))
+                                .bold()
+                            Text(positionAndTeam)
+                        }
+                    }
+                    .padding(10)
+                    
+                    HStack(spacing: 15){
+                        Text("Height:")
                             .bold()
-                        Text(positionAndTeam)
+                        Text(playerHeight)
+                        Text("Weight:")
+                            .bold()
+                        Text(playerWeight)
+                        
                     }
-                }
-                .padding(10)
-                
-                HStack{
-                    Text("Height:")
+                    
+                    HStack(spacing: 15){
+                        Text("GP:")
+                            .bold()
+                        Text(gamesPlayed)
+                        Text("G:")
+                            .bold()
+                        Text(goals)
+                        Text("A:")
+                            .bold()
+                        Text(assissts)
+                        Text("PTS:")
+                            .bold()
+                        Text(points)
+                    }
+                    
+                    .padding(10)
+                    Text("Player Description")
                         .bold()
-                    Text(playerHeight)
-                    Text("Weight:")
-                        .bold()
-                    Text(playerWeight)
+                    
+                    Text(playerDescription)
                     
                 }
-                
-                HStack{
-                    Text("GP")
-                        .bold()
-                    Text(gamesPlayed)
-                    Text("G")
-                        .bold()
-                    Text(goals)
-                    Text("A")
-                        .bold()
-                    Text(assissts)
-                    Text("PTS")
-                        .bold()
-                    Text(points)
-                }
-                
-                .padding(10)
-                Text("Player Description")
-                    .bold()
-                
-                Text(playerDescription)
-                
+                .padding()
             }
-            .padding()
         }
     }
 }
