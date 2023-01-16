@@ -7,20 +7,10 @@
 
 import SwiftUI
 
-struct HockeyCardStructure: View {
+struct HockeyCardView: View {
     
-    let playerPhoto: String
-    let playerNumber: String
-    let playerName: String
-    let positionAndTeam: String
-    let playerHeight: String
-    let playerWeight: String
-    let gamesPlayed: String
-    let goals: String
-    let assissts: String
-    let points: String
-    let playerDescription: String
-    
+    // allowing HockeyCard
+    let player: HockeyCard
     
     var body: some View {
         VStack {
@@ -40,14 +30,14 @@ struct HockeyCardStructure: View {
                             .padding(17.5)
                             .ignoresSafeArea()
                         
-                        Image(playerPhoto)
+                        Image(player.playerPhoto)
                             .resizable()
                             .scaledToFit()
                             .padding(40)
                         
                         HStack {
                             VStack {
-                                Text(playerNumber)
+                                Text(player.playerNumber)
                                     .foregroundColor(Color("Dark Blue"))
                                     .font(Font.custom("San Francisco", size: 35))
                                     .frame(maxWidth: 75)
@@ -78,11 +68,11 @@ struct HockeyCardStructure: View {
                             .frame(width: 45)
                         
                         VStack {
-                            Text(playerName)
+                            Text(player.playerName)
                                 .font(Font.custom("Arial-ItalicMT", size: 30))
                                 .bold()
                                 .foregroundColor(.white)
-                            Text(positionAndTeam)
+                            Text(player.positionAndTeam)
                                 .foregroundColor(.white)
                                 .bold()
                         }
@@ -93,12 +83,12 @@ struct HockeyCardStructure: View {
                         VStack{
                             Text("Height:")
                                 .font(.title2)
-                            Text(playerHeight)
+                            Text(player.playerHeight)
                         }
                         VStack{
                             Text("Weight:")
                                 .font(.title2)
-                            Text(playerWeight)
+                            Text(player.playerWeight)
                         }
                     }
                     .foregroundColor(.white)
@@ -108,22 +98,22 @@ struct HockeyCardStructure: View {
                         VStack {
                             Text("GP:")
                                 .font(.title2)
-                            Text(gamesPlayed)
+                            Text(player.gamesPlayed)
                         }
                         VStack {
                             Text("G:")
                                 .font(.title2)
-                            Text(goals)
+                            Text(player.goals)
                         }
                         VStack {
                             Text("A:")
                                 .font(.title2)
-                            Text(assissts)
+                            Text(player.assissts)
                         }
                         VStack{
                             Text("PTS:")
                                 .font(.title2)
-                            Text(points)
+                            Text(player.points)
                         }
                     }
                     .foregroundColor(.white)
@@ -135,7 +125,7 @@ struct HockeyCardStructure: View {
                         .bold()
                         .foregroundColor(.white)
                     
-                    Text(playerDescription)
+                    Text(player.playerDescription)
                         .foregroundColor(.white)
                     
                 }
@@ -145,8 +135,8 @@ struct HockeyCardStructure: View {
     }
 }
 
-struct HockeyCardStructure_Previews: PreviewProvider {
+struct HockeyCardView_Previews: PreviewProvider {
     static var previews: some View {
-        HockeyCardStructure(playerPhoto: "Auston Matthews", playerNumber: "#34", playerName: "Auston Matthews", positionAndTeam: "Centerman / Toronto Maple Leafs", playerHeight: "6'3", playerWeight: "208 lb", gamesPlayed: "448", goals: "279", assissts: "225", points: "504", playerDescription: "Auston Taylour Matthews (born September 17, 1997) is an American professional ice hockey center and alternate captain for the Toronto Maple Leafs of the National Hockey League (NHL).")
+        HockeyCardView(player: austonMatthews)
     }
 }
