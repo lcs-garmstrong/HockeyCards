@@ -13,42 +13,37 @@ struct HockeyCardsAppView: View {
             NavigationLink(destination: {
                 HockeyCardView(player: austonMatthews)
             },label: {
-                HStack{
-                    Image("AustonMatthews2")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 65)
-                        .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.blue, lineWidth: 2))
-                    
-                    Text("Auston Matthews")
-                        .font(.title2)
-                }
+                HockeyCardListView(person: austonMatthews2)
             })
+            
             
             NavigationLink(destination: {
                 HockeyCardView(player: mitchMarner)
             },label: {
-              Text("Mitch Marner")
+                HockeyCardListView(person: mitchMarner2)
             })
+            
             
             NavigationLink(destination: {
                 HockeyCardView(player: johnTavares)
             },label: {
-              Text("John Tavares")
+                Text("John Tavares")
             })
+            
             
             NavigationLink(destination: {
                 HockeyCardView(player: williamNylander)
             },label: {
-              Text("William Mylander")
+                Text("William Mylander")
             })
+            
             
             NavigationLink(destination: {
                 HockeyCardView(player: morganRielly)
             },label: {
-              Text("Morgan Rielly")
+                Text("Morgan Rielly")
             })
+            
             
         }
         .navigationTitle("Leafs Hockey Cards")
