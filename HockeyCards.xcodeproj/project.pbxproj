@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97A42E3029758B1500673739 /* HockeyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A42E2F29758B1500673739 /* HockeyCard.swift */; };
 		97CCACB02970982B00EACA61 /* HockeyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CCACAF2970982B00EACA61 /* HockeyCardsApp.swift */; };
 		97CCACB22970982B00EACA61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CCACB12970982B00EACA61 /* ContentView.swift */; };
 		97CCACB42970983100EACA61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97CCACB32970983100EACA61 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97A42E2F29758B1500673739 /* HockeyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCard.swift; sourceTree = "<group>"; };
 		97CCACAC2970982B00EACA61 /* HockeyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97CCACAF2970982B00EACA61 /* HockeyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCardsApp.swift; sourceTree = "<group>"; };
 		97CCACB12970982B00EACA61 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97A42E2D29758A4E00673739 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				97FAD54F297213F3001EB2CB /* HockeyCardStructure.swift */,
+				97A42E2F29758B1500673739 /* HockeyCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		97A42E2E29758A5D00673739 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97FAD55B2973053E001EB2CB /* HockeyCardsListView.swift */,
+				97FAD5572972FEE7001EB2CB /* MorganRielly.swift */,
+				97FAD5552972FD32001EB2CB /* WilliamNylander.swift */,
+				97FAD5532972F989001EB2CB /* JohnTavares.swift */,
+				97FAD5512972F7B1001EB2CB /* MitchMarner.swift */,
+				97CCACB12970982B00EACA61 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		97CCACA32970982B00EACA61 = {
 			isa = PBXGroup;
 			children = (
@@ -64,13 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				97CCACAF2970982B00EACA61 /* HockeyCardsApp.swift */,
-				97FAD54F297213F3001EB2CB /* HockeyCardStructure.swift */,
-				97CCACB12970982B00EACA61 /* ContentView.swift */,
-				97FAD5512972F7B1001EB2CB /* MitchMarner.swift */,
-				97FAD5532972F989001EB2CB /* JohnTavares.swift */,
-				97FAD5552972FD32001EB2CB /* WilliamNylander.swift */,
-				97FAD5572972FEE7001EB2CB /* MorganRielly.swift */,
-				97FAD55B2973053E001EB2CB /* HockeyCardsListView.swift */,
+				97A42E2D29758A4E00673739 /* Model */,
+				97A42E2E29758A5D00673739 /* Views */,
 				97CCACB32970983100EACA61 /* Assets.xcassets */,
 				97CCACB52970983100EACA61 /* Preview Content */,
 			);
@@ -161,6 +180,7 @@
 				97FAD55C2973053E001EB2CB /* HockeyCardsListView.swift in Sources */,
 				97FAD5522972F7B1001EB2CB /* MitchMarner.swift in Sources */,
 				97FAD5582972FEE7001EB2CB /* MorganRielly.swift in Sources */,
+				97A42E3029758B1500673739 /* HockeyCard.swift in Sources */,
 				97FAD550297213F3001EB2CB /* HockeyCardStructure.swift in Sources */,
 				97FAD5542972F989001EB2CB /* JohnTavares.swift in Sources */,
 			);
