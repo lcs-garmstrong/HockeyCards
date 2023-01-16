@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HockeyCardsListView: View {
+struct HockeyCardsAppView: View {
     var body: some View {
         List{
             NavigationLink(destination: {
@@ -56,10 +56,10 @@ struct HockeyCardsListView: View {
     }
 }
 
-struct HockeyCardsListView_Previews: PreviewProvider {
+struct HockeyCardsAppView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            HockeyCardsListView()
+            HockeyCardsAppView()
         }
     }
 }

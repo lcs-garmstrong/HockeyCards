@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		97A42E3029758B1500673739 /* HockeyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A42E2F29758B1500673739 /* HockeyCard.swift */; };
 		97A42E32297595F600673739 /* ListDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A42E31297595F600673739 /* ListDetails.swift */; };
+		97A42E342975973000673739 /* HockeyCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A42E332975973000673739 /* HockeyCardListView.swift */; };
 		97CCACB02970982B00EACA61 /* HockeyCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CCACAF2970982B00EACA61 /* HockeyCardsApp.swift */; };
 		97CCACB42970983100EACA61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97CCACB32970983100EACA61 /* Assets.xcassets */; };
 		97FAD550297213F3001EB2CB /* HockeyCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD54F297213F3001EB2CB /* HockeyCardView.swift */; };
-		97FAD55C2973053E001EB2CB /* HockeyCardsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD55B2973053E001EB2CB /* HockeyCardsListView.swift */; };
+		97FAD55C2973053E001EB2CB /* HockeyCardsAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FAD55B2973053E001EB2CB /* HockeyCardsAppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97A42E2F29758B1500673739 /* HockeyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCard.swift; sourceTree = "<group>"; };
 		97A42E31297595F600673739 /* ListDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetails.swift; sourceTree = "<group>"; };
+		97A42E332975973000673739 /* HockeyCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCardListView.swift; sourceTree = "<group>"; };
 		97CCACAC2970982B00EACA61 /* HockeyCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97CCACAF2970982B00EACA61 /* HockeyCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCardsApp.swift; sourceTree = "<group>"; };
 		97CCACB32970983100EACA61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97FAD54F297213F3001EB2CB /* HockeyCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCardView.swift; sourceTree = "<group>"; };
-		97FAD55B2973053E001EB2CB /* HockeyCardsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCardsListView.swift; sourceTree = "<group>"; };
+		97FAD55B2973053E001EB2CB /* HockeyCardsAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyCardsAppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				97FAD54F297213F3001EB2CB /* HockeyCardView.swift */,
-				97FAD55B2973053E001EB2CB /* HockeyCardsListView.swift */,
+				97FAD55B2973053E001EB2CB /* HockeyCardsAppView.swift */,
+				97A42E332975973000673739 /* HockeyCardListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +163,8 @@
 			files = (
 				97A42E32297595F600673739 /* ListDetails.swift in Sources */,
 				97CCACB02970982B00EACA61 /* HockeyCardsApp.swift in Sources */,
-				97FAD55C2973053E001EB2CB /* HockeyCardsListView.swift in Sources */,
+				97FAD55C2973053E001EB2CB /* HockeyCardsAppView.swift in Sources */,
+				97A42E342975973000673739 /* HockeyCardListView.swift in Sources */,
 				97A42E3029758B1500673739 /* HockeyCard.swift in Sources */,
 				97FAD550297213F3001EB2CB /* HockeyCardView.swift in Sources */,
 			);
