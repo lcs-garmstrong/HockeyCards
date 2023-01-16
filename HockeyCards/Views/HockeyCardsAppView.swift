@@ -27,21 +27,21 @@ struct HockeyCardsAppView: View {
             NavigationLink(destination: {
                 HockeyCardView(player: johnTavares)
             },label: {
-                Text("John Tavares")
+                HockeyCardListView(person: johnTavares2)
             })
             
             
             NavigationLink(destination: {
                 HockeyCardView(player: williamNylander)
             },label: {
-                Text("William Mylander")
+                HockeyCardListView(person: williamNylander2)
             })
             
             
             NavigationLink(destination: {
                 HockeyCardView(player: morganRielly)
             },label: {
-                Text("Morgan Rielly")
+                HockeyCardListView(person: morganRielly2)
             })
             
             
