@@ -47,7 +47,8 @@ struct HockeyCardsListView: View {
             })
             
         }
-        .navigationTitle("Toronto Maple Leafs")
+        .navigationTitle("Leafs Hockey Cards")
+        .foregroundColor(.black)
     }
 }
 

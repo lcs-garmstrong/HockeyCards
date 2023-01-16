@@ -25,10 +25,10 @@ struct HockeyCardStructure: View {
     var body: some View {
         VStack {
             ZStack {
-                RadialGradient(colors: [.blue, .white],
+                RadialGradient(colors: [.black, .blue],
                                center: .top,
                                startRadius: 0,
-                               endRadius: 630)
+                               endRadius: 750)
                 .ignoresSafeArea()
                 
                 ScrollView {
@@ -37,7 +37,7 @@ struct HockeyCardStructure: View {
                         Color("Dark Blue")
                         
                         Color.white
-                            .padding(15)
+                            .padding(17.5)
                             .ignoresSafeArea()
                         
                         Image(playerPhoto)
@@ -75,47 +75,68 @@ struct HockeyCardStructure: View {
                         Image("NHL logo")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 40)
+                            .frame(width: 45)
                         
                         VStack {
                             Text(playerName)
-                                .font(Font.custom("Arial-ItalicMT", size: 25))
+                                .font(Font.custom("Arial-ItalicMT", size: 30))
                                 .bold()
+                                .foregroundColor(.white)
                             Text(positionAndTeam)
+                                .foregroundColor(.white)
+                                .bold()
                         }
                     }
                     .padding(10)
                     
-                    HStack(spacing: 15){
-                        Text("Height:")
-                            .bold()
-                        Text(playerHeight)
-                        Text("Weight:")
-                            .bold()
-                        Text(playerWeight)
-                        
+                    HStack(spacing: 60){
+                        VStack{
+                            Text("Height:")
+                                .font(.title2)
+                            Text(playerHeight)
+                        }
+                        VStack{
+                            Text("Weight:")
+                                .font(.title2)
+                            Text(playerWeight)
+                        }
                     }
+                    .foregroundColor(.white)
+                    .bold()
                     
-                    HStack(spacing: 15){
-                        Text("GP:")
-                            .bold()
-                        Text(gamesPlayed)
-                        Text("G:")
-                            .bold()
-                        Text(goals)
-                        Text("A:")
-                            .bold()
-                        Text(assissts)
-                        Text("PTS:")
-                            .bold()
-                        Text(points)
+                    HStack(spacing: 40){
+                        VStack {
+                            Text("GP:")
+                                .font(.title2)
+                            Text(gamesPlayed)
+                        }
+                        VStack {
+                            Text("G:")
+                                .font(.title2)
+                            Text(goals)
+                        }
+                        VStack {
+                            Text("A:")
+                                .font(.title2)
+                            Text(assissts)
+                        }
+                        VStack{
+                            Text("PTS:")
+                                .font(.title2)
+                            Text(points)
+                        }
                     }
+                    .foregroundColor(.white)
+                    .bold()
                     
                     .padding(10)
                     Text("Player Description")
+                        .font(.title2)
                         .bold()
+                        .foregroundColor(.white)
                     
                     Text(playerDescription)
+                        .foregroundColor(.white)
                     
                 }
                 .padding()
