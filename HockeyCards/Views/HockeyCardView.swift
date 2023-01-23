@@ -132,11 +132,29 @@ struct HockeyCardView: View {
                 .padding()
             }
         }
+        
+        .toolbar {
+            
+            ToolbarItem(placement: .principal) {
+                HStack{
+                Text("Leafs Hockey Cards")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
+                    
+                    Spacer()
+                }
+            }
+            
+        }
+
     }
 }
 
 struct HockeyCardView_Previews: PreviewProvider {
     static var previews: some View {
-        HockeyCardView(player: austonMatthews)
+        NavigationView{
+            HockeyCardView(player: austonMatthews)
+        }
     }
 }

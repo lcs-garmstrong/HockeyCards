@@ -50,9 +50,9 @@
 		97A42E2E29758A5D00673739 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97A42E332975973000673739 /* HockeyCardListView.swift */,
 				97FAD54F297213F3001EB2CB /* HockeyCardView.swift */,
 				97FAD55B2973053E001EB2CB /* HockeyCardsAppView.swift */,
-				97A42E332975973000673739 /* HockeyCardListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
