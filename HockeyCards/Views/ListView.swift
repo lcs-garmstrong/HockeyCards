@@ -10,12 +10,13 @@ import SwiftUI
 struct ListView: View {
     var body: some View {
         
+        // Loop which shows all players
         List(allPlayers) { currentPlayer in
             
             NavigationLink(destination: {
                 HockeyCardView(player: currentPlayer)
             },label: {
-                ListItemView(person: currentPlayer.listDetail)
+                ListItemView(player: currentPlayer.listDetail)
             })
             
         }

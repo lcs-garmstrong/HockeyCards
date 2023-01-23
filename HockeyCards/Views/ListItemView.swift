@@ -9,18 +9,19 @@ import SwiftUI
 
 struct ListItemView: View {
     
-    let person: ListDetail
+    // allowing ListDetail struct to be here
+    let player: ListDetail
     
     var body: some View {
         HStack{
-            Image(person.listImage)
+            Image(player.listImage)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 65)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.blue, lineWidth: 2))
             
-            Text(person.listName)
+            Text(player.listName)
                 .font(.title2)
         }
     }
@@ -28,6 +29,6 @@ struct ListItemView: View {
 
 struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView(person: austonMatthews2)
+        ListItemView(player: austonMatthews2)
     }
 }
