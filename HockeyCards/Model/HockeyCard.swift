@@ -33,3 +33,4 @@ let williamNylander = HockeyCard (playerPhoto: "William Nylander", playerNumber:
 
 let morganRielly = HockeyCard (playerPhoto: "Morgan Rielly", playerNumber: "#44", playerName: "Morgan Rielly", positionAndTeam: "Defenseman / Toronto Maple Leafs", playerHeight: "6'1", playerWeight: "222 lb", gamesPlayed: "682", goals: "69", assissts: "323", points: "392", playerDescription: "Morgan Frederick Rielly /ˈraɪli/ (born March 9, 1994) is a Canadian professional ice hockey defenceman and alternate captain for the Toronto Maple Leafs of the National Hockey League (NHL).")
 
+let allPlayers = [austonMatthews, mitchMarner, johnTavares, williamNylander, morganRielly]
