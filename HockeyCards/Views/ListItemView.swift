@@ -1,5 +1,5 @@
 //
-//  HockeyCardListView.swift
+//  ListItemView.swift
 //  HockeyCards
 //
 //  Created by Graeme Armstrong on 2023-01-16.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct HockeyCardListView: View {
+struct ListItemView: View {
     
-    let person: ListDetails
+    let person: ListDetail
     
     var body: some View {
         HStack{
@@ -26,8 +26,8 @@ struct HockeyCardListView: View {
     }
 }
 
-struct HockeyCardListView_Previews: PreviewProvider {
+struct ListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        HockeyCardListView(person: austonMatthews2)
+        ListItemView(person: austonMatthews2)
     }
 }

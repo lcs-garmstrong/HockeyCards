@@ -1,5 +1,5 @@
 //
-//  HockeyCardStructure.swift
+//  HockeyCardView.swift
 //  HockeyCards
 //
 //  Created by Graeme Armstrong on 2023-01-13.
