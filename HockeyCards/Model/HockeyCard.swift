@@ -22,8 +22,8 @@ struct HockeyCard: Identifiable {
     let points: String
     let playerDescription: String
    
-    // for list photo
-    let listDetail: ListDetail
+    // For list photo
+    let listDetail: ListFeature
 }
 
 // Make instances to decribe five players

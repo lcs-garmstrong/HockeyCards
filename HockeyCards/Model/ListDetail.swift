@@ -1,5 +1,5 @@
 //
-//  ListDetail.swift
+//  ListFeature.swift
 //  HockeyCards
 //
 //  Created by Graeme Armstrong on 2023-01-16.
@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct ListDetail {
+struct ListFeature {
     
     let listImage: String
     let listName: String
 }
 
-let austonMatthews2 = ListDetail(listImage: "AustonMatthews2", listName: "Auston Matthews")
+let austonMatthews2 = ListFeature(listImage: "AustonMatthews2", listName: "Auston Matthews")
 
-let mitchMarner2 = ListDetail(listImage: "MitchMarner2", listName: "Mitch Marner")
+let mitchMarner2 = ListFeature(listImage: "MitchMarner2", listName: "Mitch Marner")
 
-let johnTavares2 = ListDetail(listImage: "JohnTavares2", listName: "John Tavares")
+let johnTavares2 = ListFeature(listImage: "JohnTavares2", listName: "John Tavares")
 
-let williamNylander2 = ListDetail(listImage: "WilliamNylander2", listName: "William Nylander")
+let williamNylander2 = ListFeature(listImage: "WilliamNylander2", listName: "William Nylander")
 
-let morganRielly2 = ListDetail(listImage: "MorganRielly2", listName: "Morgan Rielly")
+let morganRielly2 = ListFeature(listImage: "MorganRielly2", listName: "Morgan Rielly")

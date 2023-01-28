@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ListItemView: View {
     
-    // allowing ListDetail struct to be here
-    let player: ListDetail
+    // allowing ListFeature struct to be here
+    let player: ListFeature
     
     var body: some View {
         HStack{
